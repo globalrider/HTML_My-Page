@@ -112,7 +112,7 @@ h1{
 }
 .card{
 
-	padding-left: 30cm;
+	float:right
 	
 }
 .add{
@@ -126,7 +126,9 @@ h1{
 }
 .mul{
 
-	padding-left: 26cm;
+	position: absolute;
+	top: 100px;
+	left: 100px;
 }
 .div{
 	padding-left: 28cm;
