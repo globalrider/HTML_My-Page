@@ -116,22 +116,20 @@ h1{
 	
 }
 .add{
-	padding-left: 28cm;
+	float:right;
 }
 .mad{
-	padding-left: 26cm;
+	float:right;
 }
 .sub{
-	padding-left: 28cm;
+	float:right;
 }
 .mul{
 
-	position: absolute;
-	top: 100px;
-	left: 100px;
+	float:right;
 }
 .div{
-	padding-left: 28cm;
+	float:right;
 }
 
 
