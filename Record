@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marraige Expenditure Submit form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	</style>
+</head>
+<body>
+	<div>
+	<h2>Marraige Pavangal</h2>
+	<form action="https://sheetdb.io/api/v1/tj7u9avgv1ldu" method="post" id="sheetdb-form">
+		<label for="People">Please select your Name:</label>
+		<select id="People" name="data[People]">
+			<option value="Ravi">Ravi</option>
+			<option value="Vasu">Vasu</option>
+			<option value="Ramalingam" selected>Ramalingam</option>
+			<option value="Janakiraman">Janakiraman</option>
+		</select><br><br>
+		<label for="Side">Please select your Name:</label>
+		<select id="Side" name="data[Side]">
+			<option value="Bride">Bride</option>
+			<option value="Groom">Groom</option>
+		</select><br><br>
+		<label for="Rate">Amount Spent</label>
+		<input type="text" id="Rate" name="data[Rate]"><br><br>
+		<label for="Detail">Detail of Spent</label>
+		<input type="text" name="data[Detail]"><br><br>
+		<button type="submit" onclick="alert('Expense Submitted')">SUBMIT</button>
+	</form>
+	<script>
+  var form = document.getElementById('sheetdb-form');
+  form.addEventListener("submit", e=> {
+    e.preventDefault();
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(document.getElementById("sheetdb-form")),
+    }).then(
+    response => response.json()
+    ).then(html) => {
+      window.open('d.html', '_blank');
+    }
+    })
+  }
+</script>
+</div>
+
+</body>
+</html>
